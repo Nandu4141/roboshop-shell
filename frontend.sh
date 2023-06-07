@@ -9,3 +9,4 @@ cp roboshop.conf  /etc/nginx/default.d/roboshop.conf
 systemctl restart nginx
 
 
+
