@@ -7,11 +7,11 @@ cd /app
 unzip /tmp/user.zip
 cd /app
 npm install
-#we copy conf file here
+cp user.service /etc/systemd/system/user.service
 systemctl daemon-reload
 systemctl enable user
 systemctl start user
 
-#we copy repo file here
+cp mongodb.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
-mongo --host MONGODB-SERVER-IPADDRESS </app/schema/user.js
+mongo --host mongodb-dev.carajasekhar223.online </app/schema/user.js
