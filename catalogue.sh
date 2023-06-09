@@ -19,3 +19,4 @@ yum install mongodb-org-shell -y
 mongo --host mongodb-dev.carajasekhar223.online </app/schema/catalogue.js
 
 
+
