@@ -7,11 +7,11 @@ cd /app
 unzip /tmp/catalogue.zip
 cd /app
 npm install
-#we copy conf file here
+cp catalogue.service  /etc/systemd/system/catalogue.service
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
 
-#we copy repo file here
+cp mongodb.repo  /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
