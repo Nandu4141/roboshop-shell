@@ -16,3 +16,4 @@ cp mongodb.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host mongodb-dev.carajasekhar223.online </app/schema/catalogue.js
 
+
